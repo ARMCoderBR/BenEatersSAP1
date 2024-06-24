@@ -1,7 +1,7 @@
 # BenEatersSAP1
 ## Yet another FPGA implementation of Ben Eater's SAP-1 computer!
 
-![Basys 3 board running SAP-1](https://repository-images.githubusercontent.com/819211078/52954e30-02a5-4ecc-87c8-8abfb1fd9ab4)
+![Basys 3 board running SAP-1](https://repository-images.githubusercontent.com/819211078/3941490a-ca27-4a56-8311-58d9d8ed2bf3)
 
 For a long time I've been curious about developing projects on FPGA, and I recently purchased a Digilent's BASYS 3 board to begin my studies on FPGA logic synthesis and Verilog language. 
 
