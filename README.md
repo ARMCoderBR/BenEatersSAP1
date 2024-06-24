@@ -45,4 +45,21 @@ Assuming you are already acquainted to the SAP-1 project (if you aren't, some re
 
 * The whole implementation was made in Verilog. System Verilog and VHDL are more capable languages, but I'm still learning and this project is not (very) hard to express in pure Verilog, so I decided to stick to Verilog, and the results were good enough!
 * The original project was built on breadboards with TTL chips and a helluva of LEDs, much more than the ones supplied by the BASYS 3.
+* I needed to take a few liberties on the original SAP-1 project, as not all its parts would translate efficiently to the FPGA's realm.
+  * The original SAP-1 uses an EEPROM to decode a byte to its decimal representation in the 7-segment display, I preferred to use a more gate-oriented approach, including the [double-dabble](https://en.wikipedia.org/wiki/Double_dabble) algorithm to obtain BCD from binary, then finally translating each BCD digit to 7-segment.
+  * All counters/clocks are now sinchronized under a main clock domain, this is not really enforced but highly recommended in FPGA projects. So, unlike in the original SAP-1, there are no "ripple clocks" in this implementation, everything is synchronized to the nanosecond.
+  * Because of the change above, the microcode sequencing for the ALU operations (ADD/SUB) required one more clock cycle (6 clocks for ADD/SUB versus 5 clocks in the original SAP-1). This was needed to guarantee that the Zero and Carry flags were stable long enough to be correctly sampled before the A-Register was finally updated in the end of the ALU operation.
+
+With these changes, this "BASYS-3 SAP-1" implementation became a quite fast machine. I tested it successfully at 1 MHz, but I'm REALLY sure it can run much, much faster. I could (*aham*) bet it would run at the BASYS 3's base clock of 100 MHz, or even more using the FPGA's PLLs.
+
+__LEDs and Buttons__
+
+A small demo program is pre-loaded in RAM, but you can switch the SAP-1 into program mode and insert your own program that you've crafted with so much love. With that whopping 16-bytes RAM, the sky is the limit!
+
+* SW[4]: Prog/Run
+  * 0: Run mode
+  * 1: Program mode
+
+
+
 
