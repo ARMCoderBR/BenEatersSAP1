@@ -29,10 +29,17 @@ The project is totally written in Verilog on AMD Vivado 2024.1 IDE, that's avail
 
 __Inspiration__
 
-Of course, Ben Eater has been around for a long time and for most he doesn't need much of an introduction. Anyway, here follows Ben's relevant links that I know:
+Of course, Ben Eater has been around for a long time and for most he doesn't need much of an introduction. Anyway, here follows Ben's relevant links that I know about:
 
 Youtube: https://www.youtube.com/@BenEater
-GitHub: https://github.com/beneater
-The still free, world wide web: https://eater.net/
 
+GitHub: https://github.com/beneater
+
+The still free, World Wide Wweb: https://eater.net/
+
+The project that I'm reimplementing here is closed based on Ben's 8-bit computer project [here](https://eater.net/8bit). This project is sometimes called "SAP-1" (from "simple as possible", AFAIK), but not in every instance.
+
+__Specific Details__
+
+Assuming you are acquainted to the 
 
