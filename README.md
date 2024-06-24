@@ -52,14 +52,51 @@ Assuming you are already acquainted to the SAP-1 project (if you aren't, some re
 
 With these changes, this "BASYS-3 SAP-1" implementation became a quite fast machine. I tested it successfully at 1 MHz, but I'm REALLY sure it can run much, much faster. I could (*aham*) bet it would run at the BASYS 3's base clock of 100 MHz, or even more using the FPGA's PLLs.
 
-__LEDs and Buttons__
-
 A small demo program is pre-loaded in RAM, but you can switch the SAP-1 into program mode and insert your own program that you've crafted with so much love. With that whopping 16-bytes RAM, the sky is the limit!
 
+__SWITCHES AND BUTTONS - PROGRAM MODE__
+
 * SW[4]: Prog/Run
-  * 0: Run mode
-  * 1: Program mode
+  * 0: Run mode.
+  * 1: Program mode.
+    
+* SW[3] to SW[0]: RAM Address
+  * Used for programming, select the RAM address to be programmmed.
 
+* SW[15] to SW[8]: RAM Data
+  * Used for programming, select the RAM data to be programmed.
 
+* BTNL (Pushbutton, Left)
+   * Used for programming, executes the WRITE command (RAM Data -> RAM[RAM Address]).
+ 
+__SWITCHES AND BUTTONS - RUN MODE__
 
+* BTNL  (Pushbutton, Left)
+  * Pause/Step Execution Clock.
+
+* BTNR  (Pushbutton, Right)
+  * Resume Execution Clock.
+
+* BTNU  (Pushbutton, Up)
+  * Increase Clock Speed.
+
+* BTND  (Pushbutton, Down)
+  * Decrease Clock Speed.
+
+* BTNC  (Pushbutton, Center)
+  * Reset.
+
+__LEDS__
+
+* LED[4]
+  * Flashes whenever in Program Mode (SW[4] ON). Off in RUN Mode.
+ 
+* LED[5]
+  * Positive Clock (Registers).
+
+* LED[6]
+  * Negative Clock (Control Unit).
+
+* LED [7]
+  * Halt executed (system stopped).
 
