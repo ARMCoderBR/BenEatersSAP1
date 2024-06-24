@@ -37,9 +37,12 @@ GitHub: https://github.com/beneater
 
 The still free, World Wide Wweb: https://eater.net/
 
-The project that I'm reimplementing here is closed based on Ben's 8-bit computer project [here](https://eater.net/8bit). This project is sometimes called "SAP-1" (from "simple as possible", AFAIK), but not in every instance.
+The project that I'm reimplementing here is closed based on Ben's 8-bit computer project that can be found [here](https://eater.net/8bit). This project is sometimes called "SAP-1" (from "simple as possible", AFAIK), but even Ben seem not to use this moniker frequently (or anytime, I'm not really sure TBH). What I'm sure is that I've seen "SAP-1" being used in some sources around the web referring to this very project.
 
 __Specific Details__
 
-Assuming you are acquainted to the 
+Assuming you are already acquainted to the SAP-1 project (if you aren't, some research is recommended, this is quite a nice project!), there are a few particular details that are worth knowing.
+
+* The whole implementation was made in Verilog. System Verilog and VHDL are more capable languages, but I'm still learning and this project is not (very) hard to express in pure Verilog, so I decided to stick to Verilog, and the results were good enough!
+* The original project was built on breadboards with TTL chips and a helluva of LEDs, much more than the ones supplied by the BASYS 3.
 
