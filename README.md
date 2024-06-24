@@ -35,7 +35,7 @@ Of course, Ben Eater has been around for a long time and for most he doesn't nee
 
 * GitHub: https://github.com/beneater
 
-* The still free, World Wide Wweb: https://eater.net/
+* The still free, World Wide Web: https://eater.net/
 
 The project that I'm reimplementing here is closed based on Ben's 8-bit computer project that can be found [here](https://eater.net/8bit). This project is sometimes called "SAP-1" (from "simple as possible", AFAIK), but even Ben seem not to use this moniker frequently (or anytime, I'm not really sure TBH). What I'm sure is that I've seen "SAP-1" being used in some sources around the web referring to this very project.
 
@@ -44,7 +44,7 @@ __Specific Details__
 Assuming you are already acquainted to the SAP-1 project (if you aren't, some research is recommended, this is quite a nice project!), there are a few particular details that are worth knowing.
 
 * The whole implementation was made in Verilog. System Verilog and VHDL are more capable languages, but I'm still learning and this project is not (very) hard to express in pure Verilog, so I decided to stick to Verilog, and the results were good enough!
-* The original project was built on breadboards with TTL chips and a helluva of LEDs, much more than the ones supplied by the BASYS 3.
+* The original project was built on breadboards with TTL chips and a helluva of LEDs, much more than the ones supplied by the BASYS 3. So I had to trim down the information shown over the available LEDs.
 * I needed to take a few liberties on the original SAP-1 project, as not all its parts would translate efficiently to the FPGA's realm.
   * The original SAP-1 uses an EEPROM to decode a byte to its decimal representation in the 7-segment display, I preferred to use a more gate-oriented approach, including the [double-dabble](https://en.wikipedia.org/wiki/Double_dabble) algorithm to obtain BCD from binary, then finally translating each BCD digit to 7-segment.
   * All counters/clocks are now sinchronized under a main clock domain, this is not really enforced but highly recommended in FPGA projects. So, unlike in the original SAP-1, there are no "ripple clocks" in this implementation, everything is synchronized to the nanosecond.
@@ -100,3 +100,10 @@ __LEDS__
 * LED [7]
   * Halt executed (system stopped).
 
+* LED[3:0]
+  * In Program Mode, indicate the current RAM address being viewed/programmed.
+  * In Run Mode, the current RAM address in use.
+
+* LED[15:8]
+  * In Program Mode, indicate the current RAM data being viewed/programmed.
+  * In Run Mode, show the Main WBus activity.
