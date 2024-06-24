@@ -58,54 +58,54 @@ A small demo program is pre-loaded in RAM, but you can switch the SAP-1 into pro
 
 __SWITCHES AND BUTTONS - PROGRAM MODE__
 
-* SW[4]: Prog/Run
-  * 0: Run mode.
-  * 1: Program mode.
+* __SW[4]:__ Prog/Run
+  * __0:__ Run mode.
+  * __1:__ Program mode.
     
-* SW[3] to SW[0]: RAM Address
+* __SW[3] to SW[0]:__ RAM Address
   * Used for programming, select the RAM address to be programmmed.
 
-* SW[15] to SW[8]: RAM Data
+* __SW[15] to SW[8]:__ RAM Data
   * Used for programming, select the RAM data to be programmed.
 
-* BTNL (Pushbutton, Left)
+* __BTNL (Pushbutton, Left)__
    * Used for programming, executes the WRITE command (RAM Data -> RAM[RAM Address]).
  
 __SWITCHES AND BUTTONS - RUN MODE__
 
-* BTNL  (Pushbutton, Left)
+* __BTNL  (Pushbutton, Left)__
   * Pause/Step Execution Clock.
 
-* BTNR  (Pushbutton, Right)
+* __BTNR  (Pushbutton, Right)__
   * Resume Execution Clock.
 
-* BTNU  (Pushbutton, Up)
+* __BTNU  (Pushbutton, Up)__
   * Increase Clock Speed.
 
-* BTND  (Pushbutton, Down)
+* __BTND  (Pushbutton, Down)__
   * Decrease Clock Speed.
 
-* BTNC  (Pushbutton, Center)
+* __BTNC  (Pushbutton, Center)__
   * Reset.
 
 __LEDS__
 
-* LED[4]
+* __LED[4]__
   * Flashes whenever in Program Mode (SW[4] ON). Off in RUN Mode.
  
-* LED[5]
+* __LED[5]__
   * Positive Clock (Registers).
 
-* LED[6]
+* __LED[6]__
   * Negative Clock (Control Unit).
 
-* LED [7]
+* __LED [7]__
   * Halt executed (system stopped).
 
-* LED[3:0]
+* __LED[3:0]__
   * In Program Mode, indicate the current RAM address being viewed/programmed.
   * In Run Mode, the current RAM address in use.
 
-* LED[15:8]
+* __LED[15:8]__
   * In Program Mode, indicate the current RAM data being viewed/programmed.
   * In Run Mode, show the Main WBus activity.
