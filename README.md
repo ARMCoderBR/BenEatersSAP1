@@ -21,5 +21,18 @@ The basic info on the BASYS3 board is:
 
 Official info on the BASYS 3 board is available [here](https://digilent.com/reference/programmable-logic/basys-3/start).
 
+## The Project
+
+__Environment__
+
+The project is totally written in Verilog on AMD Vivado 2024.1 IDE, that's available for Windows and Linux. I've used Ubuntu 2022.04.04 LTS for the whole development, AFAIK as of now Vivado doesn't support the recently released 2024 Ubuntu yet.
+
+__Inspiration__
+
+Of course, Ben Eater has been around for a long time and for most he doesn't need much of an introduction. Anyway, here follows Ben's relevant links that I know:
+
+Youtube: https://www.youtube.com/@BenEater
+GitHub: https://github.com/beneater
+The still free, world wide web: https://eater.net/
 
 
