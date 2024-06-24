@@ -29,7 +29,9 @@ The project is totally written in Verilog on AMD Vivado 2024.1 IDE, that's avail
 
 __Inspiration__
 
-Of course, Ben Eater has been around for a long time and for most he doesn't need much of an introduction. Anyway, here follows Ben's relevant links that I know about:
+It's beyond doubt that implementing a fully-functional microprocessor is a great and fun way to learn the magic of FPGA development. But for a starter, it's better to pick a simple project. Ben Eater's SAP-1 is a perfect fit for this purpose.
+
+Ben Eater has been around for a long time and for the initiated he doesn't need much of an introduction. Anyway, here follows Ben's relevant links that I know about:
 
 * Youtube: https://www.youtube.com/@BenEater
 
