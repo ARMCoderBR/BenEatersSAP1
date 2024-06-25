@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="mainsim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="mainsim" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="19,973.696667 us"></ZoomStartTime>
+      <ZoomEndTime time="19,987.546668 us"></ZoomEndTime>
+      <Cursor1Time time="19,976.005000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="176"></NameColumnWidth>
+      <ValueColumnWidth column_width="75"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="27" />
+   <wvobject type="logic" fp_name="/mainsim/CLK100MHZ">
+      <obj_property name="ElementShortName">CLK100MHZ</obj_property>
+      <obj_property name="ObjectShortName">CLK100MHZ</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/sapclk">
+      <obj_property name="ElementShortName">sapclk</obj_property>
+      <obj_property name="ObjectShortName">sapclk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/sapclkn">
+      <obj_property name="ElementShortName">sapclkn</obj_property>
+      <obj_property name="ObjectShortName">sapclkn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/mainsim/regAdata">
+      <obj_property name="ElementShortName">regAdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">regAdata[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/mainsim/regBdata">
+      <obj_property name="ElementShortName">regBdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">regBdata[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/mainsim/ramaddr">
+      <obj_property name="ElementShortName">ramaddr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ramaddr[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/mainsim/ramdataleds">
+      <obj_property name="ElementShortName">ramdataleds[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ramdataleds[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/mainsim/mainwbus">
+      <obj_property name="ElementShortName">mainwbus[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mainwbus[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/ZR">
+      <obj_property name="ElementShortName">ZR</obj_property>
+      <obj_property name="ObjectShortName">ZR</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/CY">
+      <obj_property name="ElementShortName">CY</obj_property>
+      <obj_property name="ObjectShortName">CY</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/HLT">
+      <obj_property name="ElementShortName">HLT</obj_property>
+      <obj_property name="ObjectShortName">HLT</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/MI">
+      <obj_property name="ElementShortName">MI</obj_property>
+      <obj_property name="ObjectShortName">MI</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/RI">
+      <obj_property name="ElementShortName">RI</obj_property>
+      <obj_property name="ObjectShortName">RI</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/RO">
+      <obj_property name="ElementShortName">RO</obj_property>
+      <obj_property name="ObjectShortName">RO</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/IO">
+      <obj_property name="ElementShortName">IO</obj_property>
+      <obj_property name="ObjectShortName">IO</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/II">
+      <obj_property name="ElementShortName">II</obj_property>
+      <obj_property name="ObjectShortName">II</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/AI">
+      <obj_property name="ElementShortName">AI</obj_property>
+      <obj_property name="ObjectShortName">AI</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/AO">
+      <obj_property name="ElementShortName">AO</obj_property>
+      <obj_property name="ObjectShortName">AO</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/SO">
+      <obj_property name="ElementShortName">SO</obj_property>
+      <obj_property name="ObjectShortName">SO</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/SU">
+      <obj_property name="ElementShortName">SU</obj_property>
+      <obj_property name="ObjectShortName">SU</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/BI">
+      <obj_property name="ElementShortName">BI</obj_property>
+      <obj_property name="ObjectShortName">BI</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/OI">
+      <obj_property name="ElementShortName">OI</obj_property>
+      <obj_property name="ObjectShortName">OI</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/CE">
+      <obj_property name="ElementShortName">CE</obj_property>
+      <obj_property name="ObjectShortName">CE</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/CO">
+      <obj_property name="ElementShortName">CO</obj_property>
+      <obj_property name="ObjectShortName">CO</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/J">
+      <obj_property name="ElementShortName">J</obj_property>
+      <obj_property name="ObjectShortName">J</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mainsim/FI">
+      <obj_property name="ElementShortName">FI</obj_property>
+      <obj_property name="ObjectShortName">FI</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/mainsim/opcode">
+      <obj_property name="ElementShortName">opcode[3:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[3:0]</obj_property>
+   </wvobject>
+</wave_config>

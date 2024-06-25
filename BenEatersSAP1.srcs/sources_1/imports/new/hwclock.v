@@ -27,6 +27,7 @@ module secclockgen(input mainclk,
     reg[6:0] divider1;
     reg[9:0] divider2;
     
+    reg ctwait;
     parameter DIVIDER1 = 100;
     parameter DIV2_1 = (DIVIDER1/2)-1;
 
@@ -35,6 +36,7 @@ module secclockgen(input mainclk,
     
     initial begin
     
+        ctwait = 1;
         secclk1MHz = 0;
         divider1 = 0;
         secclk1kHz = 0;
@@ -43,20 +45,23 @@ module secclockgen(input mainclk,
     
     always @ (posedge mainclk) begin
         
-        divider1 = divider1 + 1;
-        
-        if (divider1 == DIVIDER1) begin
-
-            divider1 = 0;
-            divider2 = divider2 + 1;
-            if (divider2 == DIVIDER2) divider2 = 0;
+        if (ctwait) ctwait = ctwait - 1;
+        else begin
+            divider1 = divider1 + 1;
+            
+            if (divider1 == DIVIDER1) begin
+    
+                divider1 = 0;
+                divider2 = divider2 + 1;
+                if (divider2 == DIVIDER2) divider2 = 0;
+            end
+    
+            if (divider2 >= DIV2_2) secclk1kHz = 0;
+            else secclk1kHz = 1;
+    
+            if (divider1 > DIV2_1) secclk1MHz = 0;
+            else secclk1MHz = 1;
         end
-
-        if (divider2 >= DIV2_2) secclk1kHz = 0;
-        else secclk1kHz = 1;
-
-        if (divider1 > DIV2_1) secclk1MHz = 0;
-        else secclk1MHz = 1;
     end
 
 endmodule
@@ -115,7 +120,7 @@ module sapclock(input mainclk,
         outreset = 0;
         pre_out_clk = 0;
         outclk = 0;
-        outclkn = 1;
+        outclkn = 0;
         running = 1;
         step = 0;
         divider_sel = 0;
