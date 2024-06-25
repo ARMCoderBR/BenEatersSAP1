@@ -7,13 +7,13 @@ For a long time I've been curious about developing projects on FPGA, and I recen
 
 The basic info on the BASYS3 board is:
 
-* FPGA: Xilinx Artix-7 XC7A35T-1CPG236C
-* GPIOs:
+* __FPGA:__ Xilinx Artix-7 XC7A35T-1CPG236C
+* __GPIOs:__
   * 16 slide switches
   * 16 configurable LEDs
   * 5 pushbuttons
-* Display output: 4 digit LED 7-segment, common anode, multiplexed
-* Connectivity
+* __Display output:__ 4 digit LED 7-segment, common anode, multiplexed
+* __Connectivity__
   * Micro USB for power, JTAG and UART
   * USB-A to allow loading the FPGA's bitmap from a thumb drive
   * Sub-D analog VGA port
@@ -39,7 +39,7 @@ Ben Eater has been around for a long time and for the initiated he doesn't need 
 
 * The still free, World Wide Web: https://eater.net/
 
-The project that I'm reimplementing here is closed based on Ben's 8-bit computer project that can be found [here](https://eater.net/8bit). This project is sometimes called "SAP-1" (from "simple as possible", AFAIK), but even Ben seem not to use this moniker frequently (or anytime, I'm not really sure TBH). What I'm sure is that I've seen "SAP-1" being used in some sources around the web referring to this very project.
+The project that I'm reimplementing here is closely based on Ben's 8-bit computer project that can be found [here](https://eater.net/8bit). This project is sometimes called "SAP-1" (from "simple as possible", AFAIK), but even Ben seem not to use this moniker frequently (or anytime, I'm not really sure TBH). What I'm sure is that I've seen "SAP-1" being used in some sources around the web referring to this very project.
 
 __Specific Details__
 
